@@ -1,0 +1,17 @@
+[2026-04-22T07:54:12Z] === ENRICH ITERATION 1 START | repo=apple/containerization sha=56916452 ===
+[2026-04-22T07:54:12Z] [iter=1] PHASE START: enrich repo=apple/containerization sha=56916452 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/56916452-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/56916452e9fb09ed8ff94b80d8a95dd1a8ca66ac.nq.gz
+[2026-04-22T07:54:12Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-22T07:54:35Z] [iter=1] AST store loaded triples=2584087 load_secs=22 mem_mb=982 MB
+[2026-04-22T07:54:35Z] [iter=1] Step 2: Finding LSP targets mem_mb=982 MB
+[2026-04-22T07:54:47Z] [iter=1] LSP targets found call_sites=15940 imports=784 extends=0 implements=0 secs=12
+[2026-04-22T07:54:58Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=982 MB
+[2026-04-22T07:55:13Z] [iter=1] Position index built positions=148120 nodes_with_types=175475 secs=15 mem_mb=982 MB
+[2026-04-22T07:55:13Z] [iter=1] Step 3: Starting LSP resolution mem_mb=982 MB already_completed_types=[] already_completed_files=0
+[2026-04-22T07:55:13Z] [iter=1] Resolving target type target_type=call_site count=15940
+[2026-04-22T07:55:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=0 resolved=0 errors=15940 current=Sources/CShim/exec_command.c
+[2026-04-22T07:55:25Z] [iter=1] Target type resolved target_type=call_site resolved=80 errors=15948 secs=12 mem_mb=982 MB
+[2026-04-22T07:55:25Z] [iter=1] Resolving target type target_type=import_statement count=784
+[2026-04-22T07:55:29Z] [iter=1] Target type resolved target_type=import_statement resolved=2 errors=784 secs=4 mem_mb=982 MB
+[2026-04-22T07:55:29Z] [iter=1] Step 5: Writing final enrichment file triples=2461
+[2026-04-22T07:55:30Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/56916452e9fb09ed8ff94b80d8a95dd1a8ca66ac.nq.gz size_kb=37
+[2026-04-22T07:55:30Z] [iter=1] PHASE END: enrich elapsed_s=77 elapsed_min=1.3 total_triples=2461
